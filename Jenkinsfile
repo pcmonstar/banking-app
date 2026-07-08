@@ -5,7 +5,7 @@ pipeline {
     tools {
         maven 'Maven-3.9'
     }
-
+    stages {
         stage('Build') {
             steps {
                 echo 'Building application...'
