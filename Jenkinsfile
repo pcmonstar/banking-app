@@ -21,6 +21,13 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+	
+	stage('Docker Build') {
+	    steps {
+               echo 'Building Docker Image...'
+	       sh 'docker build -t banking-app-v1 .'
+	    }
+        }
 
     }
 
