@@ -5,6 +5,12 @@ pipeline {
     tools {
         maven 'Maven-3.9'
     }
+
+    environment {
+                 IMAGE_NAME = "pcmonstar/banking-app"
+                 IMAGE_TAG = "${BUILD_NUMBER}"
+		}
+
     stages {
         stage('Build') {
             steps {
@@ -16,7 +22,7 @@ pipeline {
 	stage('Docker Build') {
 	    steps {
                echo 'Building Docker Image...'
-	       sh 'docker build -t banking-app-v1 .'
+	       sh 'docker build -t ${IMAGE_NAME}:${$IMAGE_TAG} .'
 	    }
         }
 
