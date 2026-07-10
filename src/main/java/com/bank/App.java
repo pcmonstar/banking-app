@@ -10,10 +10,10 @@ public class App {
 
         System.out.println("==================================");
         System.out.println("Banking Application");
-        System.out.println("Version : v2");
+        System.out.println("Version : v3");
 	System.out.println("Build Number : 2");
         System.out.println("Environment : DEV");
-        System.out.println("Application Started Successfully");
+        System.out.println("Application Started Successfully. Build from Jenkins Pipeline");
         System.out.println("==================================");
 
         while (true) {

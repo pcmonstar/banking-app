@@ -45,6 +45,17 @@ pipeline {
                 }
             }
         }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                echo "Deploying version ${IMAGE_NAME}:${IMAGE_TAG} to Kubernetes"
+                sh '''
+                kubectl set image deployment/banking-app banking-app=${IMAGE_NAME}:${IMAGE_TAG} -n dev
+
+                kubectl rollout status deployment/banking-app -n dev
+                '''
+            }
+        }
     }
 
     post {
