@@ -10,8 +10,8 @@ public class App {
 
         System.out.println("==================================");
         System.out.println("Banking Application");
-        System.out.println("Version : Fetch Test");
-	    System.out.println("Build Number : Rahul Version 2");
+        System.out.println("Version : Prashant - Practice");
+	System.out.println("Build Number : Rahul Version 2");
         System.out.println("Environment : DEVELOPMENT - Git hub");
         System.out.println("Application Started Successfully. Build from Jenkins Pipeline");
         System.out.println("==================================");
