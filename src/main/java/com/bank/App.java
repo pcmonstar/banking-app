@@ -8,7 +8,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
-        System.out.println("==================================");
+        System.out.println("=============TESTING=====================");
         System.out.println("Banking Application");
         System.out.println("Version : Prashant - Practice");
 	System.out.println("Build Number : Rahul Version 2");
